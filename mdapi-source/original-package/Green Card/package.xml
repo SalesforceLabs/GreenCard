@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * Copyright (c) 2018, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause
+ * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+-->
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Green Card</fullName>
+    <apiAccessLevel>Unrestricted</apiAccessLevel>
+    <description>POST INSTALLATION ACTIVITIES [1] Fill details for fields of Custom Settings &quot;Migration Details&quot;. [2] Clone permission Set &quot;Migrate CCP to PC&quot; to make &quot;Migrate CCP to PC Plus System Permission&quot; Permission Set. Add &quot;Manage User&quot; and &quot;Manage External User&quot; Permissions to &quot;Migrate CCP to PC Plus System Permission&quot; Permission Set. Assign Permission Set &quot;Migrate CCP to PC Plus System Permission&quot; to the running User. [3] Assign button &quot;Migrate User from CCP to PC&quot; to page layout of Contact from where Users will invoke the process( by clicking button) to migrate associated Customer Community Plus User to Partner Community User. [4] Edit Classic Email template &quot;Customer to Partner Community Migration&quot; to replace &quot;partner&quot; in &quot;/partner/s/login/&quot; with Community URL. Email Template is in Email Template Folder &quot;Customer to Partner Community Migration&quot;. GOOD LUCK Migrating Users!</description>
+    <namespacePrefix>GreenCard</namespacePrefix>
+    <types>
+        <members>Migration_Details__c.Allow_Solution_to_Send_eMail__c</members>
+        <members>Migration_Details__c.Community_URL__c</members>
+        <members>Migration_Details__c.PartnerSuffix__c</members>
+        <members>Migration_Details__c.Source_Profile__c</members>
+        <members>Migration_Details__c.Target_Profile__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Migration_Details__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Migrate_CCP_to_PC</members>
+        <name>CustomPermission</name>
+    </types>
+    <types>
+        <members>Customer_to_Partner_Community_Migration</members>
+        <members>Customer_to_Partner_Community_Migration/Communities_Migrate_from_CCP_to_PC_Email</members>
+        <name>EmailTemplate</name>
+    </types>
+    <types>
+        <members>Migrate</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Migrate_CCP_to_PC</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>Contact.Migrate_User_from_CCP_to_PC</members>
+        <name>WebLink</name>
+    </types>
+    <types>
+        <members>User.CCP_to_PC_Migration_Email_Alert</members>
+        <name>WorkflowAlert</name>
+    </types>
+    <version>45.0</version>
+</Package>
