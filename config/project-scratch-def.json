@@ -1,9 +1,10 @@
 {
-  "orgName": "Demo Company",
+  "orgName": "Green Card Scratch Org",
   "edition": "Developer",
-  "features": [],
+  "features": ["Communities"],
   "settings": {
     "orgPreferenceSettings": {
+      "networksEnabled": true,
       "s1DesktopEnabled": true
     }
   }

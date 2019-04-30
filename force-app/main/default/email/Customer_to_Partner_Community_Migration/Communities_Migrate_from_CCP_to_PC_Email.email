@@ -5,7 +5,7 @@ Congratulations! You have now  enhanced privileges to view, manage & create Lead
 To start this process please reset your password by completing the following steps:
 
 1. Click on this link 
- {! $Setup.Migration_Details__c.Community_URL__c + '/partner/s/login/' }.
+ {! $Setup.Migration_Details__c.Community_URL__c + '/Partner/s/login/' }.
 2. Click on "Forgot your password?" on the login page.
 3. Enter your email: {!Target_User.Email}
 4. You will receive a second email containing reset link valid for 24 hours. Please click this link and reset your password.

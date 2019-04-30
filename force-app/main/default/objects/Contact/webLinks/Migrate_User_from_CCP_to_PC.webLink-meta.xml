@@ -8,5 +8,5 @@
     <masterLabel>Migrate User from CCP to PC</masterLabel>
     <openType>replace</openType>
     <protected>false</protected>
-    <url>/flow/GreenCard/Migrate?vInputContactId={!Contact.Id}&amp;vInputAccountId={!Account.Id}&amp;vInputContactEmail={!Contact.Email}&amp;retURL={!Contact.Id}</url>
+    <url>/flow/Migrate?vInputContactId={!Contact.Id}&amp;vInputAccountId={!Account.Id}&amp;vInputContactEmail={!Contact.Email}&amp;retURL={!Contact.Id}</url>
 </WebLink>
